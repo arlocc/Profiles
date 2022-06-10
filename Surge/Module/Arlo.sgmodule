@@ -22,7 +22,7 @@ DOMAIN,api.waqi.info,🔰 节点选择
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
 
 # > 交管12123 去广告
-^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
+^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
 #hostname = gab.122.gov.cn
 
 [Script]
