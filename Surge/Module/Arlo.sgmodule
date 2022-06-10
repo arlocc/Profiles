@@ -11,7 +11,7 @@ skip-proxy = %APPEND% iosapps.itunes.apple.com
 DOMAIN,api.waqi.info,🔰 节点选择
 
 # > 交管12123 去广告
-URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,REJECT
+URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,⛔️Reject
 #hostname = gab.122.gov.cn
 
 [URL Rewrite]
