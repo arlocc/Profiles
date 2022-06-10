@@ -17,7 +17,7 @@ disney_check = script-name=disney_check,title=Disney+ 解锁检测,content=请�
 # 附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
 functionstatus = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/functionstatus.js
 # 机场信息, 必须修改的字段:你encode后的机场订阅链接
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Arlo44/Profiles/main/Surge/Module/sub_info_panel.js,script-update-interval=0
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/sub_info_panel.js,script-update-interval=0
 Sub_info1 = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js,timeout=10
 # 流量统计 点击以切换网络界面
 TrafficStatistics = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js,argument=icon=link.icloud,icon-color=#5AC8FA
