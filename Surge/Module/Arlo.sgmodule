@@ -10,10 +10,6 @@ skip-proxy = %APPEND% iosapps.itunes.apple.com
 # > 天气数据 
 DOMAIN,api.waqi.info,🔰 节点选择
 
-# > 交管12123 去广告
-URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery -⛔️Reject
-#hostname = gab.122.gov.cn
-
 [URL Rewrite]
 #!name=Wikiwand(by DivineEngine)
 #!desc=Wikipedia to Wikiwand
