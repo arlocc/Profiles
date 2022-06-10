@@ -1,0 +1,27 @@
+#!name=Tasks Module
+#!desc=Cron Task Pack
+#!system=ios
+
+[Script]
+
+# 签到类
+Tasks: 京东签到 = type=cron,cronexp=0 8 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# 推送类
+Tasks: 京东资产变动通知 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_bean_change.js
+Tasks: 疫情日报 = type=cron,cronexp=10 9 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/nCov.js
+Tasks: 汇率监控 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/exchange.js
+Tasks: 机场流量 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js
+Tasks: 彩云天气 = type=cron,cronexp=10 8-23/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
+Tasks: Epic周免 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
+Tasks: NASA每日一图 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/nasapic.js
+Tasks: iDaily每日环球视野 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/idaily.js
+Tasks: Dark Sky = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/Dark%20Sky.js
+Tasks: Dark Sky2 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/Dark%20Sky2.js
+Tasks: Dark Sky Pro = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/DarkSkyPro.js
+Tasks: Weather Por = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/weather_pro.js
+Tasks: Weather Por2 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/weather_pro2.js
+Tasks: 每日壹句 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/One.js
+Tasks: 色图 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/setu.js
+#Tasks: 微博配置 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js
+#Tasks: 微博推送 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
