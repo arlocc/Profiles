@@ -3,7 +3,8 @@
 
 [URL Rewrite]
 # > JiaoGuan12123 - gab.122.gov.cn
-^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
 
 [MITM]
 hostname = %APPEND% gab.122.gov.cn
