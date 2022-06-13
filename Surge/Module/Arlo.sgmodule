@@ -6,10 +6,6 @@
 force-http-engine-hosts = %APPEND% boxjs.com
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
-[Rule]
-# > 天气数据 
-DOMAIN,api.waqi.info,🔰 节点选择
-
 [URL Rewrite]
 #!name=Wikiwand(by DivineEngine)
 #!desc=Wikipedia to Wikiwand
