@@ -18,6 +18,9 @@ skip-proxy = %APPEND% iosapps.itunes.apple.com
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
 
 [Script]
+FT中文網解鎖V權限 = type=http-response,pattern=^https?:\/\/user\.ftmailbox\.cn\/ios-receipt-validation\.php.*,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/ftchinese.js,script-update-interval=0,max-size=0
+#hostname= user.ftmailbox.cn
+
 #!name=BoxJs (@ chavyleung)
 #!desc=http://boxjs.com
 Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/boxjs\.com,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true, timeout=120
@@ -95,4 +98,4 @@ Caixin = type=http-response,pattern=https://www.caixinglobal.com/[0-9]+,requires
 BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
 
 [MITM]
-hostname = %INSERT% *.wikipedia.org,*.wikiwand.com, app.biliintl.com, gab.122.gov.cn, sub.store, greasyfork.org, openuserjs.org, weather-data.apple.com, api.weather.com, mp.weixin.qq.com, ap?.bili*i.com, ap?.bili*i.net, vsco.co, api.revenuecat.com, api.picsart.c*, api.meiease.c*, ap*.intsig.net, notability.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, *.caixin.com, www.caixinglobal.com, api.bilibili.com
+hostname = %INSERT% *.wikipedia.org,*.wikiwand.com, user.ftmailbox.cn, app.biliintl.com, gab.122.gov.cn, sub.store, greasyfork.org, openuserjs.org, weather-data.apple.com, api.weather.com, mp.weixin.qq.com, ap?.bili*i.com, ap?.bili*i.net, vsco.co, api.revenuecat.com, api.picsart.c*, api.meiease.c*, ap*.intsig.net, notability.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, *.caixin.com, www.caixinglobal.com, api.bilibili.com
