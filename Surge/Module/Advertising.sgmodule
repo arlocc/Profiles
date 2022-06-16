@@ -6,8 +6,8 @@
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
 
 #金融时报
-^https:\/\/d1025gvspu57dc\.cloudfront\.net\/log\/new_log\.php - reject
-^https:\/\/creatives\.ftacademy\.cn\/ads - reject
+^https:\//d1025gvspu57dc.cloudfront.net\/log\/new_log.php - reject
+^https:\//creatives\.ftacademy\.cn\/ads - reject
 
 [MITM]
 hostname = %APPEND% gab.122.gov.cn, d1025gvspu57dc.cloudfront.net, creatives.ftacademy.cn
