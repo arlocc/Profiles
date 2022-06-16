@@ -10,4 +10,4 @@
 ^https:\/\/creatives\.ftacademy\.cn\/ads - reject
 
 [MITM]
-hostname = %APPEND% gab.122.gov.cn
+hostname = %APPEND% gab.122.gov.cn, d1025gvspu57dc.cloudfront.net, creatives.ftacademy.cn
