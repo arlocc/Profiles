@@ -1,0 +1,754 @@
+{
+  "id": "arlocc.app.sub",
+  "name": "arlocc 脚本订阅",
+  "description": "该订阅兼容BoxJs以及QX Gallery",
+  "author": "@arlocc",
+  "icon": "https://avatars.githubusercontent.com/u/107193123?v=4",
+  "repo": "https://github.com/arlocc/Profiles",
+  "apps": [{
+    "id": "多合一签到",
+    "name": "京东",
+    "keys": ["CookiesJD"],
+    "descs_html": [
+      "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js\">脚本注释</a></h4>",
+      "<h4 align=\"center\">如需修改Cookie列表请严格按照<a href=\"https://www.bejson.com/json/format\">JSON格式</a>修改</h4>",
+      "<h4 align=\"center\">建议通过脚本获取Cookie</h4>",
+      "<br />",
+      "<h3 align=\"center\">签到相关教程</h3>",
+      "<p align=\"center\"><iframe src=\"https://www.youtube.com/embed/6vMz1LKF1-8\" width=\"100%\" height=\"100%\"></iframe></p>"
+    ],
+    "settings": [{
+      "id": "JD_DailyBonusLog",
+      "name": "详细响应日志",
+      "val": false,
+      "type": "boolean",
+      "desc": "打印原始签到结果, 用于调试脚本, 一般用户建议关闭."
+    }, {
+      "id": "JD_Crash_disable",
+      "name": "崩溃自动禁用",
+      "val": true,
+      "type": "boolean",
+      "desc": "脚本运行崩溃时(如VPN断连), 下次运行时将自动禁用相关崩溃接口(仅部分接口启用), 注: 崩溃时可能会误禁用正常接口."
+    }, {
+      "id": "JD_Retry_disable",
+      "name": "签到接口增强",
+      "val": true,
+      "type": "boolean",
+      "desc": "用于部分接口提示\"不含活动数据\"问题, 开启后会进行二次查询, 注: 可能会导致崩溃(小概率)."
+    }, {
+      "id": "JD_Follow_disable",
+      "name": "自动关注店铺",
+      "val": true,
+      "type": "boolean",
+      "desc": "部分接口签到过程可能需要关注店铺, 如介意可选择关闭."
+    }, {
+      "id": "JD_DailyBonusDisables",
+      "name": "签到接口禁用",
+      "val": "",
+      "type": "checkboxes",
+      "desc": "",
+      "items": [{
+        "key": "JDBean",
+        "label": "京东京豆"
+      }, {
+        "key": "JRSteel",
+        "label": "金融钢镚"
+      }, {
+        "key": "JDTurn",
+        "label": "京东转盘"
+      }, {
+        "key": "JDGStore",
+        "label": "京东超市"
+      }, {
+        "key": "JDCard",
+        "label": "京东卡包"
+      }, {
+        "key": "JD3C",
+        "label": "京东数码"
+      }, {
+        "key": "JDSuitcase",
+        "label": "京东箱包"
+      }, {
+        "key": "JDChild",
+        "label": "京东童装"
+      }, {
+        "key": "JDBaby",
+        "label": "京东母婴"
+      }, {
+        "key": "JDCash",
+        "label": "京东红包"
+      }, {
+        "key": "JDFSale",
+        "label": "京东闪购"
+      }, {
+        "key": "JDBook",
+        "label": "京东图书"
+      }, {
+        "key": "JDStory",
+        "label": "失眠补贴"
+      }, {
+        "key": "JDPhone",
+        "label": "手机小时达"
+      }, {
+        "key": "JDSchool",
+        "label": "京东校园"
+      }, {
+        "key": "JDUndies",
+        "label": "京东内衣"
+      }, {
+        "key": "JDShoes",
+        "label": "京东鞋靴"
+      }, {
+        "key": "JDShand",
+        "label": "京东二手"
+      }, {
+        "key": "JDHealth",
+        "label": "京东健康"
+      }, {
+        "key": "JDWomen",
+        "label": "京东女装"
+      }, {
+        "key": "JDSecKill",
+        "label": "京东秒杀"
+      }, {
+        "key": "JTDouble",
+        "label": "金贴双签"
+      }, {
+        "key": "JDVege",
+        "label": "京东菜场"
+      }, {
+        "key": "JDClean",
+        "label": "京东清洁"
+      }, {
+        "key": "JDCare",
+        "label": "京东个护"
+      }, {
+        "key": "JDaccompany",
+        "label": "京东陪伴"
+      }, {
+        "key": "JDCube",
+        "label": "京东魔方"
+      }, {
+        "key": "JDJiaDian",
+        "label": "京东家电"
+      }, {
+        "key": "JDDouble",
+        "label": "京豆双签"
+      }, {
+        "key": "subsidy",
+        "label": "京东金贴"
+      }, {
+        "key": "JDGetCash",
+        "label": "京东现金"
+      }, {
+        "key": "JDShake",
+        "label": "京东摇一摇"
+      }, {
+        "key": "Qbear",
+        "label": "总京豆查询"
+      }, {
+        "key": "TCash",
+        "label": "总红包查询"
+      }, {
+        "key": "TSteel",
+        "label": "总钢镚查询"
+      }, {
+        "key": "TotalSubsidy",
+        "label": "总金贴查询"
+      }, {
+        "key": "TotalMoney",
+        "label": "总现金查询"
+      }]
+    }, {
+      "id": "JD_DailyBonusTimeOut",
+      "name": "超时退出 (毫秒)",
+      "val": "",
+      "type": "number",
+      "placeholder": "默认无超时 (点击以展开说明)",
+      "desc": "按需填写, 用于由网络不稳定引起的脚本中断, 正常或越狱用户建议留空. 如QX日志出现大量\"JS Context timeout\"后脚本中断时, 建议填写6000"
+    }, {
+      "id": "JD_DailyBonusDelay",
+      "name": "接口延迟 (毫秒)",
+      "val": "",
+      "type": "number",
+      "placeholder": "默认并发无延迟 (点击以展开说明)",
+      "desc": "延迟作用于每个签到接口, 该参数接受随机或指定延迟(例: '2000'则表示延迟2秒; '2000-5000'则表示延迟最小2秒,最大5秒内的随机延迟), 如填入延迟则切换顺序签到(耗时较长); VPN重启或越狱用户建议填写1(顺序执行), Surge用户请注意在SurgeUI界面调整脚本超时."
+    }, {
+      "id": "CookiesJD",
+      "name": "Cookie列表",
+      "val": "",
+      "type": "textarea",
+      "autoGrow": false,
+      "rows": 9,
+      "val": "[\n  {\n    \"cookie\": \"此处填写账号1 Cookie\"\n  },\n  {\n    \"cookie\": \"此处填写账号2 Cookie\",\n    \"jrBody\": \"此处填写账号2 钢镚Body\"\n  }\n]",
+      "placeholder": "[ {\"cookie\": \"pt_key=xxx;pt_pin=yyy;\", \"jrBody\": \"reqData=zzz\"}  ]",
+      "desc": "Cookie和钢镚签到Body列表, 如需修改请严格按照JSON格式填写; \"cookie\"为必须, 其他为可选."
+    }],
+    "scripts": [{
+      "name": "京东签到",
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
+    }, {
+      "name": "初始化设置",
+      "script": "https://gist.githubusercontent.com/NobyDa/91cbe57dd50b3588a975af8922507a72/raw/JD_initial.js"
+    }],
+    "author": "@NobyDa",
+    "repo": "https://github.com/NobyDa/Script/tree/master/JD-DailyBonus",
+    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/jd.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png"] 
+    }, {
+    "id": "@iRingo.Apple.Weather",
+    "name": "Apple Weather",
+     "descs_html": [
+           "请参照<a href=\"https://github.com/VirgilClyne/iRingo#天气\">iRingo#天气</a>的使用说明进行配置",
+            "填写完成后别忘点击此页面底端右下角的\"保存\"。",
+            "查询速度:\"私有API+城市\" > \"私有API+观测站\" > \"公共API+观测站\"",
+            "定位精度:\"观测站\" > \"城市\""
+            ],
+            "keys": [
+                "@iRingo.Apple.Weather"
+            ],
+            "settings": [
+                {
+                    "id": "@iRingo.Apple.Weather.Mode",
+                    "name": "工作模式",
+                    "val": "WAQI Public",
+                    "type": "radios",
+                    "items": [
+                        {
+                            "key": "WAQI Public",
+                            "label": "waqi.info 公共API"
+                        },
+                        {
+                            "key": "WAQI Private",
+                            "label": "waqi.info 私有API"
+                        }
+                    ],
+                    "desc": "没有申请自己Token的只能使用\"公共API\""
+                },
+                {
+                    "id": "@iRingo.Apple.Weather.Location",
+                    "name": "定位精度",
+                    "val": "Station",
+                    "type": "radios",
+                    "items": [
+                        {
+                            "key": "City",
+                            "label": "城市"
+                        },
+                        {
+                            "key": "Station",
+                            "label": "观测站"
+                        }
+                    ],
+                    "desc": "获取天气数据的精确度，\"观测站\"会获取距离你最近的观测站数据，\"城市\"只会获取所在地城市指定观测站的数据"
+                },
+                {
+                    "id": "@iRingo.Apple.Weather.Verify.Mode",
+                    "name": "验证方式",
+                    "val": "Token",
+                    "type": "radios",
+                    "items": [
+                        {
+                            "key": "Token",
+                            "label": "令牌"
+                        }
+                    ],
+                    "desc": "验证方式"
+                },
+                {
+                    "id": "@iRingo.Apple.Weather.Verify.Content",
+                    "name": "验证内容",
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "1234567893feefc5f0q5000bfo0c38d90bbeb",
+                    "desc": "‘令牌’验证方式的值写一行"
+                }
+            ],
+            "author": "@VirgilClyne",
+            "repo": "https://github.com/VirgilClyne/iRingo/blob/main/js/Apple_Weather.js",
+            "icons": [
+                "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png",
+                "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
+            ]
+    }, {
+      "id": "Github Monitor",
+      "name": "GitHub 监控",
+      "keys": ["@github.repo"],
+      "settings": [
+        {
+          "id": "@github.repo",
+          "name": "仓库地址",
+          "val": "[\n\t\t{\n\t\t\t\t\"name\": \"NZW9314 脚本\",\n\t\t\t\t\"url\": \"https://github.com/nzw9314/QuantumultX/tree/master\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"Chavy 脚本\",\n\t\t\t\t\"url\": \"https://github.com/chavyleung/scripts\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"NobyDa\",\n\t\t\t\t\"file_names\": [\"JD-DailyBonus/JD_DailyBonus.js\", \"52pojie-DailyBonus\"],\n\t\t\t\t\"url\": \"https://github.com/NobyDa/Script/tree/master\"\n\t\t}\n]",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "desc": "仓库地址 (JSON 格式)"
+        },
+        {
+          "id": "@github.token",
+          "name": "Github Token (可选)",
+          "val": "784a03feb07989d3339dfa41c7eb41777436cbfa",
+          "type": "text",
+          "desc": "Github Token"
+        }
+      ],
+      "author": "@Peng-YM",
+      "repo": "https://github.com/Peng-YM/QuanX",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/github.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/github.png"
+      ],
+      "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js"
+    }, {
+      "id": "Flow",
+      "name": "机场流量查询",
+      "keys": ["@flow.subscriptions"],
+      "settings": [
+        {
+          "id": "@flow.subscriptions",
+          "name": "机场订阅",
+          "val": "[\n\t{\n\t\t\"link\": \"订阅地址1\",\n\t\t\"name\": \"取个名字1\",\n\t\t\"icon\": \"https://raw.githubusercontent.com/Orz-3/mini/master/pudding.png\"\n\t},\n\t{\n\t\t\"link\": \"订阅地址2\",\n\t\t\"name\": \"取个名字2\",\n\t\t\"icon\": \"https://raw.githubusercontent.com/Orz-3/mini/master/Nexitally.png\"\n\t}\n]",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "desc": "机场订阅 (JSON 格式)"
+        }
+      ],
+      "author": "@Peng-YM",
+      "repo": "https://github.com/Peng-YM/QuanX",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/flow_mini.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/flow.png"
+      ],
+      "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js"
+    }, {
+      "id": "Caiyun",
+      "name": "彩云天气",
+      "keys": [
+        "@caiyun.token.caiyun",
+        "@caiyun.token.tencent",
+        "@caiyun.display_location",
+        "@caiyun.location.latitude",
+        "@caiyun.location.longitude",
+        "@caiyun.address"
+      ],
+      "settings": [
+        {
+          "id": "@caiyun.token.caiyun",
+          "name": "彩云天气API Token",
+          "val": null,
+          "type": "text",
+          "autoGrow": false,
+          "rows": 2,
+          "desc": "彩云天气的Token，可以自行申请或者前往频道获取"
+        },
+        {
+          "id": "@caiyun.token.tencent",
+          "name": "腾讯地图API Token",
+          "val": "AHEBZ-ASTWX-CIW4P-7TV7T-AWKLS-7CFWP",
+          "type": "text",
+          "rows": 1,
+          "desc": ""
+        },
+        {
+          "id": "@caiyun.display_location",
+          "name": "是否在日志中显示经纬度",
+          "val": false,
+          "type": "boolean",
+          "desc": ""
+        },
+        {
+          "id": "@caiyun.location.latitude",
+          "name": "纬度",
+          "val": null,
+          "type": "text",
+          "desc": "纬度，可以关闭MITM获取位置，手动设置"
+        },
+        {
+          "id": "@caiyun.location.longitude",
+          "name": "经度",
+          "val": null,
+          "type": "text",
+          "desc": "经度，可以关闭MITM获取位置，手动设置"
+        }
+      ],
+      "author": "@Peng-YM",
+      "repo": "https://github.com/Peng-YM/QuanX",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/caiyun.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/caiyun.png"
+      ],
+      "script": "https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/caiyun.js"
+    }, {
+      "id": "nasapic",
+      "name": "NASA每日一图",
+      "descs_html": [
+      "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js\">脚本地址</a>】",
+      "首先前往<a href=\"https://api.nasa.gov\">NASA</a>申请一个API，申请流程非常简单，把得到的API填入脚本即可"
+    ],
+      "keys": ["@NASA.nasaapi"],
+      "settings": [
+      {
+      "id": "@NASA.translate",
+      "name": "翻译",
+      "val": false,
+      "type": "boolean",
+      "desc": "是否进行翻译"
+    }, {
+      "id": "@NASA.nasaapi",
+      "name": "API",
+      "val": "",
+      "placeholder": "686BJ2YbpY****************Op8gaVTeVs0t",
+      "type": "textarea",
+      "autoGrow": true,
+      "rows": 1,
+      "desc": "请填入API"
+      }
+    ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/nasa",
+      "icons": [
+       "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa_tran.png",
+       "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
+    ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js"
+    }, {
+      "id": "covid1",
+      "name": "疫情查询区域",
+      "keys": [],
+      "settings": [
+        {
+          "id": "covid19area",
+          "name": "区域",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "按格式输入查询的区域"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/covid19.js",
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/health.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/health.png"]
+    }, {
+      "id": "idaily",
+      "name": "iDaily",
+      "descs_html": [
+      "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js\">脚本地址</a>】"
+    ],
+      "keys": ["@iDaily.random"],
+      "settings": [
+      {
+      "id": "@iDaily.random",
+      "name": "随机获取",
+      "val": false,
+      "type": "boolean",
+      "desc": "打开将会随机获取内容"
+      }
+    ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/idaily",
+      "icons": [
+      "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png",
+      "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily.png"
+    ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js"
+    }, {
+      "id": "zZ.UnblockURLinWeChat",
+      "name": "解除微信链接限制",
+      "keys": ["@UnblockURLinWeChat.taobaoNotifyJump", "@UnblockURLinWeChat.useGoogleCache", "@UnblockURLinWeChat.wechatExportKey"],
+      "settings": [{
+      "id": "@UnblockURLinWeChat.taobaoNotifyJump",
+      "name": "淘宝通知跳转",
+      "val": true,
+      "type": "boolean",
+      "desc": "淘宝链接是否弹窗通知跳转。"
+    }, {
+      "id": "@UnblockURLinWeChat.useGoogleCache",
+      "name": "在微信中用谷歌快照显示被封禁的链接",
+      "val": true,
+      "type": "boolean",
+      "desc": "是否以谷歌快照的形式（如果有）在微信浏览器中直接显示封禁的链接。"
+    }, {
+      "id": "@UnblockURLinWeChat.wechatExportKey",
+      "name": "微信 exportKey",
+      "val": "",
+      "type": "text",
+      "desc": "微信的一个 key，macOS 部分封禁链接跳转 Safari 后缺失微信的 exportKey 参数，无法解析出原始链接，这个暂未解决。"
+    }],
+      "author": "@zZPiglet",
+      "repo": "https://github.com/zZPiglet/Task/tree/master/",
+      "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js",
+      "icons": [
+        "https://raw.githubusercontent.com/RayPS/WeChat-Logo/master/shape_white.svg",
+        "https://raw.githubusercontent.com/RayPS/WeChat-Logo/master/icon1024x1024.svg"
+      ]
+    }, {
+      "id": "zZ.Weibo",
+      "name": "微博通知",
+      "descs_html": [
+        "请先进入<a href=\"https://m.weibo.cn\">手机网页版微博</a>并登陆按，再按<a href=\"https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js\">脚本注释</a>进行配置，然后回到网页刷新即可获取 Cookie。",
+        "请注意：一定要<font class=\"red--text\">先登录</font>，否则获取的为游客 Cookie，无法通知「特别关注」及有查看限制的微博。",
+        "运行后通知为「上一次」运行到「本次」运行之间的微博，其中「第零次」运行及「测试环境」默认为「很久很久很久···」以前（时间戳为0），所以第一次运行为接口返回的所有信息，之后有新微博才会通知。",
+        "需要注意的是：即便因配置错误运行之后有错误信息，此次运行时间戳也已经记录，若想还原到「第零次」的状态，请清空下面的时间戳。",
+        "注意：「特别管组」、「用户 ID」、「用户昵称」三者的通知均<font class=\"red--text\">独立</font>，请勿填写重复，以避免通知重复。",
+        "若有希望添加的点击跳转的客户端，请提供该客户端打开指定微博的 URL Scheme，反馈至 <a href=\"https://t.me/zZPiglet_bot\">@zZPiglet_bot</a>。"
+      ],
+      "keys": ["@Weibo.WeiboNotice", "@Weibo.interval", "@Weibo.Group", "@Weibo.Weibo_uids", "@Weibo.Weibo_nicknames", "@Weibo.chooseClient"],
+      "settings": [
+       {
+      "id": "@Weibo.debug",
+      "name": "测试环境",
+      "val": false,
+      "type": "boolean",
+      "desc": "如未出现特殊报错等问题请保持关闭。"
+    }, {
+      "id": "@Weibo.interval",
+      "name": "间隔",
+      "val": "",
+      "type": "number",
+      "placeholder": "1000", 
+      "desc": "运行时多通知之间时间间隔，单位为毫秒，不填默认为 1000 毫秒。"
+    }, {
+      "id": "@Weibo.update",
+      "name": "时间戳",
+      "val": "",
+      "type": "number", 
+      "desc": "上次运行时保存的时间戳，十三位。"
+    }, {
+      "id": "@Weibo.WeiboNotice",
+      "name": "Cookie",
+      "val": "",
+      "type": "textarea",
+      "rows": 2,
+      "autoGrow": true, 
+      "desc": "微博 Cookie，若抓包填入，只需填入 Cookie 中「SUB=」后至「;」中间的值。"
+    }, {
+      "id": "@Weibo.Group",
+      "name": "通知分组",
+      "val": ["Special"],
+      "type": "checkboxes",
+      "desc": "选择需要通知的分组",
+      "items": [
+       { "key": "Special", "label": "特别关注" },
+       { "key": "Spider", "label": "指定用户" }
+      ]
+    }, {
+      "id": "@Weibo.Weibo_uids",
+      "name": "用户 ID",
+      "val": "",
+      "type": "textarea",
+      "placeholder": "1111681197,\n7099422177", 
+      "autoGrow": true, 
+      "rows": 2,
+      "desc": "填入需订阅的用户 uid，如不填入 uid 及昵称请取消上一项「指定用户」勾选。以英文逗号分隔多个 uid，可加回车。微博 uid 的获取方法：如「来去之间」微博主页为「https://weibo.com/wflanker」，需查看页面源码，找到「$CONFIG['oid'] = '1111681197'」即可得知 uid 为「1111681197」，切记不是「$CONFIG['uid']」，或直接访问手机端，其主页为「https://m.weibo.cn/u/1111681197?uid=1111681197」亦可得知。再如「外交部发言人办公室」微博主页为「https://weibo.com/u/7099422177」，则其 uid 为「7099422177」。"
+    }, {
+      "id": "@Weibo.Weibo_nicknames",
+      "name": "用户昵称",
+      "val": "",
+      "type": "textarea",
+      "placeholder": "央视新闻,\n搜狐娱乐", 
+      "autoGrow": true, 
+      "rows": 2,
+      "desc": "填入需订阅的用户昵称，如不填入 uid 及昵称请取消上一项「指定用户」勾选。以英文逗号分隔多个昵称，可加回车。请勿重复填写。"
+    }, {
+      "id": "@Weibo.chooseClient",
+      "name": "客户端",
+      "val": "Safari",
+      "type": "radios",
+      "desc": "选择点击跳转的客户端，如需加入想要的客户端，请提供该客户端打开指定微博的 URL Scheme，反馈至 @zZPiglet_bot，或提交 issue，或进行 PR。",
+      "items": [
+       { "key": "Safari", "label": "Safari" },
+       { "key": "Sinaweibo", "label": "微博" },
+       { "key": "Weibointernational", "label": "微博国际版" },
+       { "key": "VVebo", "label": "VVebo" }
+      ]
+    }
+    ],
+      "author": "@zZPiglet",
+      "repo": "https://github.com/zZPiglet/Task/blob/master/Weibo/Weibo.js",
+      "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js",
+      "icons": [
+      "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png",
+      "https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png"
+    ]
+    }, {
+      "id": "zZ.Douban",
+      "name": "电影日历",
+      "descs_html": [
+        "由于官方取消了 APIKey 的申请，请自行解决此问题：<ol><li>网上找别人之前申请的（关键字：<font class=\"red--text\">豆瓣 API Key</font>）</li> <li>下载 app 自行抓包 / 重写获取本机上的</li></ol>",
+        "若选择利用重写获得，请先按<a href=\"https://raw.githubusercontent.com/zZPiglet/Task/master/MovieCalendar/MovieCalendar.js\">脚本注释</a>进行配置，进入  widget 界面（负一屏），添加「豆瓣·电影日历」，并重新进入此界面使其刷新获取内容，若弹出\"首次写入 MovieCalendar APIKey 成功\"即可正常食用，其他提示或无提示请使用其他方法获取 APIKey。",
+        "注意：重试次数请勿填写过大，会导致<font class=\"red--text\">内存爆炸</font>💥！",
+        "当客户端选择「自定义跳转」时，可在下方填入需要跳转的链接，也可为 URL Scheme。需注意的是，普通链接应带 <font class=\"red--text\">http(s)://</font>。",
+        "URL Scheme 如：<ul type=\"disc\"><li>钉钉打卡：dingtalk://dingtalkclient/page/link?url=https://attend.dingtalk.com/attend/index.html</li><li>支付宝领积分：alipays://platformapi/startapp?appId=20000160&url=/www/pointSignIn.html</li><li>支付宝领家庭积分：alipays://platformapi/startapp?appId=2019052365379124</li><li>支付宝收能量：alipay://platformapi/startapp?appId=60000002</li><li>支付宝喂小鸡：alipays://platformapi/startapp?appId=66666674</li><li>支付宝消费券：alipays://platformapi/startapp?appId=2021001162654785</li><li>招行便民刮刮乐：cmbmobilebank://cmbls/functionjump?action=gocorpno&corpno=100891&shorturl=https%3A%2F%2Fcmb-scratchers.weijuju.com%2Fapp%2Findex</li><li>招行 188 抽奖：cmbmobilebank://cmbls/functionjump?action=gofuncid&funcid=16335001&needlogin=true&cmb_app_trans_parms_start=here&ActGroupID=AGP20201231114539LWG5kfNa&shorturl=http%3A%2F%2Fcmbt.cn%2FQQmnzR</li><li>招行 688 抽奖：cmbmobilebank://cmbls/functionjump?action=gofuncid&funcid=16335001&needlogin=true&cmb_app_trans_parms_start=here&ActGroupID=AGP20201231115927hrJ7vvyu&shorturl=http%3A%2F%2Fcmbt.cn%2FQQmnzR</li><li>小黑盒签到：heybox://</li><li>115 摇一摇：wx9b74cc2b355eef5f://</li></ul>"
+    ],
+      "keys": ["@MovieCalendar.apikey", "@MovieCalendar.diylink", "@MovieCalendar.time", "@MovieCalendar.choosePic", "@MovieCalendar.chooseClient"],
+      "settings": [
+      {
+      "id": "@MovieCalendar.debug",
+      "name": "测试环境",
+      "val": false,
+      "type": "boolean",
+      "desc": "如未出现特殊报错等问题请保持关闭。"
+    }, {
+      "id": "@MovieCalendar.time",
+      "name": "重试次数",
+      "val": "",
+      "type": "number",
+      "placeholder": "10", 
+      "desc": "运行时接口失败的重试次数，不填默认为 10，请谨慎填写，过大会爆内存。"
+    }, {
+      "id": "@MovieCalendar.apikey",
+      "name": "APIKey",
+      "val": "",
+      "type": "text", 
+      "desc": "豆瓣获取接口的 APIKey，请自行获取。"
+    }, {
+      "id": "@MovieCalendar.choosePic",
+      "name": "多媒体",
+      "val": "poster",
+      "type": "radios",
+      "desc": "选择通知中的多媒体。",
+      "items": [
+        { "key": "poster", "label": "电影剧照" },
+        { "key": "cover", "label": "电影海报" },
+        { "key": "trailer", "label": "预告片" }
+      ]
+    }, {
+      "id": "@MovieCalendar.chooseClient",
+      "name": "客户端",
+      "val": "Safari",
+      "type": "radios",
+      "desc": "选择点击跳转的客户端。",
+      "items": [
+       { "key": "Safari", "label": "Safari" },
+       { "key": "douban", "label": "豆瓣" },
+       { "key": "diy", "label": "自定义跳转" }
+      ]
+    }, {
+      "id": "@MovieCalendar.diylink",
+      "name": "跳转链接",
+      "val": "",
+      "type": "text",
+      "placeholder": "dingtalk://dingtalkclient/page/link?url=https://attend.dingtalk.com/attend/index.html", 
+      "desc": "自定义跳转链接，可为 URL Scheme，仅当客户端选择「自定义跳转」时有效。"
+    }
+      ],
+      "author": "@zZPiglet",
+      "repo": "https://github.com/zZPiglet/Task/blob/master/MovieCalendar/MovieCalendar.js",
+      "scripts": [
+        {
+          "name": "电影日历 样式一",
+          "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/MovieCalendar/MovieCalendar.js"
+    }, {
+          "name": "电影日历 样式二",
+          "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/MovieCalendar/MovieCalendar_lite.js"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MovieCalendar.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/MovieCalendar.png"
+      ]
+    }, {
+      "id": "BiliRegion",
+      "name": "哔哩番剧自动地区",
+      "descs_html": [
+       "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js\">脚本注释</a></h4>"
+    ],
+      "keys": ["BiliArea_Policy", "BiliArea_CN", "BiliArea_HK", "BiliArea_TW"],
+      "settings": [{
+      "id": "BiliAreaNotify",
+      "name": "静默运行",
+      "val": false,
+      "type": "boolean",
+      "desc": "开启后将不再发出切换策略通知"
+    }, {
+      "id": "BiliDoubanRating",
+      "name": "豆瓣评分",
+      "val": true,
+      "type": "boolean",
+      "desc": "关闭后将不再查询豆瓣评分, 可显著提高相关页面载入速度"
+    }, {
+      "id": "BiliArea_Policy",
+      "name": "策略组名",
+      "val": "",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "哔哩哔哩分流的策略组名"
+    }, {
+      "id": "BiliArea_CN",
+      "name": "中国大陆-子策略名",
+      "val": "DIRECT",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "哔哩哔哩分流策略组里的中国大陆子策略名"
+    }, {
+      "id": "BiliArea_HK",
+      "name": "中国香港-子策略名",
+      "val": "",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "哔哩哔哩分流策略组里的香港子策略名"
+    }, {
+      "id": "BiliArea_TW",
+      "name": "中国台湾-子策略名",
+      "val": "",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "哔哩哔哩分流策略组里的台湾子策略名"
+    }],
+    "author": "@NobyDa",
+    "repo": "https://github.com/NobyDa/Script/blob/master/Surge/JS/Bili_Auto_Regions.js",
+    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bilibili.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/bilibili.png"]
+  }],
+  "task": [{
+    "config": "0 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png",
+    "addons": "https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/GetCookie.qxrewrite, tag=GetCookie获取"
+  }, {
+    "config": "0 */30 9-21 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js, tag=微博推送, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png",
+    "addons": "https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/GetCookie.qxrewrite, tag=GetCookie获取"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png"
+  }, {
+        "config": "0 9 * * * https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, tag=qq会员成长值签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
+  }, {
+    "config": "0 10 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/nCov.js, tag=疫情日报, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
+  }, {
+    "config": "10 8-22/3 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, tag=彩云天气, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/caiyun.png"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js, tag=Epic周免, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/epic.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/nasapic.js, tag=NASA每日一图, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/nasa.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/AppMonitor.js, tag=App价格监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/appstore.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/idaily.js, tag=iDaily每日环球视野, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/idaily.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky.js, tag=Dark Sky, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky2.js, tag=Dark Sky2, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky%20Pro.js, tag=Dark Sky Pro, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_hour.js, tag=weather_hour, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_pro.js, tag=weather_por, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_pro2.js, tag=weather_por2, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_week.js, tag=weather_week, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js, tag=Sub-Store, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/Sub-Store.png"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/githubdulong/Script/master/One.js, tag=每日壹句, img-url=https://raw.githubusercontent.com/anker1209/icon/main/mryj.png"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js, tag=TG频道图片推送, img-url=https://raw.githubusercontent.com/anker1209/icon/main/mryj.png"
+  }, {
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/setu.js, tag=色图, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/pixiv.png"
+  }, {
+    "config": "0 8 * * * https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js, tag=微博配置, img-url=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/imgs/icon/weibo.png"
+  }]
+}
