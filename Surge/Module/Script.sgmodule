@@ -42,6 +42,11 @@ caiyun=type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather)
 #hostname = mp.weixin.qq.com
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+#!name=TestFlight账户管理 (@ NobyDa)
+#!desc=自动存储/合并多个TestFlight账户列表, 并可导出/分享TestFlight APP.
+#hostname = %APPEND% testflight.apple.com
+TestFlight账户管理 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
+
 #!name=Bili_Auto_Regions (@ NobyDa)
 #!desc=Bilibli 番剧自动切换地区 & 显示豆瓣评分
 #hostname = ap?.bili*i.com, ap?.bili*i.net
@@ -100,4 +105,4 @@ ftchinese = type=http-response,pattern=^https?:\/\/user\.ftmailbox\.cn\/ios-rece
 BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
 
 [MITM]
-hostname = %INSERT% *.wikipedia.org,*.wikiwand.com, app.biliintl.com, gab.122.gov.cn, sub.store, greasyfork.org, openuserjs.org, weather-data.apple.com, api.weather.com, mp.weixin.qq.com, ap?.bili*i.com, ap?.bili*i.net, vsco.co, api.revenuecat.com, api.picsart.c*, api.meiease.c*, ap*.intsig.net, notability.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, *.caixin.com, www.caixinglobal.com, user.ftmailbox.cn, api.bilibili.com
+hostname = %INSERT% *.wikipedia.org,*.wikiwand.com, app.biliintl.com, gab.122.gov.cn, sub.store, greasyfork.org, openuserjs.org, weather-data.apple.com, api.weather.com, mp.weixin.qq.com, testflight.apple.com, ap?.bili*i.com, ap?.bili*i.net, vsco.co, api.revenuecat.com, api.picsart.c*, api.meiease.c*, ap*.intsig.net, notability.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, *.caixin.com, www.caixinglobal.com, user.ftmailbox.cn, api.bilibili.com
