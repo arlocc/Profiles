@@ -89,7 +89,7 @@ nf_rating_season.js = type=http-response,pattern=^https?:\/\/ios(-.*)?\.prod\.ft
 #财新周刊
 cxzk.js = script-path= https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/cxzk.js,requires-body=1,pattern=http://ipadcms.caixin.com/tmp/articles/*,type=http-response
 #财新
-caixin.js = script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/cx.js,requires-body=1,pattern=https://gateway.caixin.com/api/stat/v1/client_data/from_app,type=http-response
+caixin.js = script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/cx.js,requires-body=1,pattern=https://mappsv5.caixin.com/articlev5/*,type=http-response
 #财新国际版
 #hostname = www.caixinglobal.com
 Caixin = type=http-response,pattern=https://www.caixinglobal.com/[0-9]+,requires-body=1,max-size=-1,control-api=1,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/caixin.js,script-update-interval=0
