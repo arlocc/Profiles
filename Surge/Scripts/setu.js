@@ -150,12 +150,12 @@ if (isSurge) {
 // @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/setu.js
 // ==/UserScript==
 
-let userApikey   = '' //请在 Telegram 内使用 @loliconApiBot 申请
+let userApikey   = '856426855e95d8e0e16da5' //请在 Telegram 内使用 @loliconApiBot 申请
 let userR18      = 2 //18禁为1 非为0 2是混合
 let userKeyword  = ''//搜索关键字
 let userNum      = 1 //一次返回的结果数量，范围为1到10，数字的数量亦为弹框的次数
 var request = {
-    url:encodeURI(https://api.lolicon.app/setu/v2?size=original&size=regular),
+    url:encodeURI("https://api.lolicon.app/setu?apikey=" + userApikey + "&r18=" + userR18 + "&keyword=" + userKeyword + "&num=" + userNum),
     header:{  
      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
     },
