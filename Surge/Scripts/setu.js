@@ -13,7 +13,7 @@ $httpClient.get(params,function(error, response, data){
     let msg = datas.data[0]
     let url = msg.url
     console.log(url)
-    $notification.post("每日色图","",msg.tags,{'openUrl':url,'mediaUrl':url})
+    $notification.post("极速开车","",msg.tags,{'openUrl':url,'mediaUrl':url})
    } 
    else{
       console.log(datas.msg)
