@@ -29,7 +29,7 @@ $task.fetch(request).then(response => {
 		for(i = 0;i<obj.data.length;i++)
 		{
 			let pictureURL = encodeURI(obj.data[i].url);
-			$notify("每日色图", {"open-url":pictureURL,"media-url":pictureURL}); // Success
+			$notify("每日色图", "", "cuttlefish", {"open-url":pictureURL,"media-url":pictureURL}); // Success
 		}
 	}
 	else
