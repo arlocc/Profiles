@@ -369,35 +369,35 @@
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png"
   }, {
         "config": "0 9 * * * https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, tag=qq会员成长值签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
   }, {
-    "config": "0 10 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/nCov.js, tag=疫情日报, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
+    "config": "0 10 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/nCov.js, tag=疫情日报, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
   }, {
     "config": "10 8-22/3 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, tag=彩云天气, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/caiyun.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js, tag=Epic周免, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/epic.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/nasapic.js, tag=NASA每日一图, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/nasa.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/nasapic.js, tag=NASA每日一图, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/nasa.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/AppMonitor.js, tag=App价格监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/appstore.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/AppMonitor.js, tag=App价格监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/appstore.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/idaily.js, tag=iDaily每日环球视野, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/idaily.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/idaily.js, tag=iDaily每日环球视野, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/idaily.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky.js, tag=Dark Sky, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/Dark%20Sky.js, tag=Dark Sky, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky2.js, tag=Dark Sky2, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/Dark%20Sky2.js, tag=Dark Sky2, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky%20Pro.js, tag=Dark Sky Pro, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/Dark%20Sky%20Pro.js, tag=Dark Sky Pro, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_hour.js, tag=weather_hour, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/weather_hour.js, tag=weather_hour, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_pro.js, tag=weather_por, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/weather_pro.js, tag=weather_por, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_pro2.js, tag=weather_por2, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/weather_pro2.js, tag=weather_por2, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_week.js, tag=weather_week, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/weather_week.js, tag=weather_week, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js, tag=Sub-Store, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/Sub-Store.png"
   }, {
@@ -405,7 +405,7 @@
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js, tag=TG频道图片推送, img-url=https://raw.githubusercontent.com/anker1209/icon/main/mryj.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/setu.js, tag=色图, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/pixiv.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/Scripts/setu.js, tag=色图, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/pixiv.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js, tag=微博配置, img-url=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/imgs/icon/weibo.png"
   }]
