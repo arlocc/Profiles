@@ -22,6 +22,6 @@ Tasks: Dark Sky Pro = type=cron,cronexp=10 8 * * *,script-path=https://raw.githu
 Tasks: Weather Por = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/weather_pro.js
 Tasks: Weather Por2 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/weather_pro2.js
 Tasks: 每日壹句 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/One.js
-Tasks: 色图 = type=cron,cronexp=51 13 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/setu.js
+Tasks: 色图 = type=cron,cronexp=17 14 * * *,script-path=https://raw.githubusercontent.com/arlocc/Profiles/main/Surge/Scripts/setu.js
 #Tasks: 微博配置 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js
 #Tasks: 微博推送 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
