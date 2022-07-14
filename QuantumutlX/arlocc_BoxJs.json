@@ -385,11 +385,11 @@
   }, {
     "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/idaily.js, tag=iDaily每日环球视野, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/idaily.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky.js, tag=Dark Sky, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky.js, tag=Dark Sky, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky2.js, tag=Dark Sky2, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky2.js, tag=Dark Sky2, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky%20Pro.js, tag=Dark Sky Pro, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/DarkSky.png"
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/Dark%20Sky%20Pro.js, tag=Dark Sky Pro, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/DarkSky.png"
   }, {
     "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_hour.js, tag=weather_hour, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
@@ -399,13 +399,13 @@
   }, {
     "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/weather_week.js, tag=weather_week, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weather.png"
   }, {
-    "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js, tag=Sub-Store, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/Sub-Store.png"
+    "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/scripts/cron-sync-artifacts.js, tag=Sub-Store, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/Sub-Store.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/githubdulong/Script/master/One.js, tag=每日壹句, img-url=https://raw.githubusercontent.com/anker1209/icon/main/mryj.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js, tag=TG频道图片推送, img-url=https://raw.githubusercontent.com/anker1209/icon/main/mryj.png"
   }, {
-    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/setu.js, tag=色图, img-url=https://raw.githubusercontent.com/Arlo44/QuantumutlX/main/IconSet/pixiv.png"
+    "config": "0 8 * * * https://github.com/arlocc/Profiles/blob/main/QuantumutlX/Scripts/setu.js, tag=色图, img-url=https://raw.githubusercontent.com/arlocc/Profiles/main/QuantumutlX/IconSet/pixiv.png"
   }, {
     "config": "0 8 * * * https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js, tag=微博配置, img-url=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/imgs/icon/weibo.png"
   }]
